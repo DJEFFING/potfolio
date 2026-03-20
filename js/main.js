@@ -90,7 +90,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll(
-  '.timeline-item, .project-card, .skill-group, .edu-card'
+  '.timeline-item, .project-card, .skill-group, .edu-card, .profil-card'
 ).forEach((el, i) => {
   el.style.transitionDelay = `${i * 60}ms`;
   observer.observe(el);

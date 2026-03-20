@@ -783,6 +783,71 @@ strong { color: var(--text); font-weight: 600; }
 .tech-item:hover span { color: var(--text); }
 
 
+/* ── Bouton téléchargement CV ── */
+.btn-download {
+  margin-top: 28px;
+  display: inline-flex;
+}
+
+/* ════════════════════════════════
+   PROFIL
+════════════════════════════════ */
+.profil-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.profil-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: all var(--transition);
+  opacity: 0;
+  transform: translateY(24px);
+}
+.profil-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.profil-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.profil-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  transition: all var(--transition);
+}
+.profil-card:hover .profil-icon {
+  background: var(--accent);
+  color: #fff;
+}
+
+.profil-card h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.profil-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
 /* ════════════════════════════════
    EDUCATION
 ════════════════════════════════ */
