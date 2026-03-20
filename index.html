@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jefferson Azafack Tsafack | Développeur Fullstack & IA</title>
+  <meta name="description" content="Portfolio de Jefferson Azafack Tsafack, développeur fullstack passionné par l'IA et le cloud." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">JAT<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Bonjour, je suis</p>
+      <h1 class="hero-name">Jefferson <span class="accent">Azafack</span> Tsafack</h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-title-static">Développeur </span>
+        <span class="hero-title-dynamic" id="typing-text"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Passionné par la création d'applications web modernes et l'intégration de l'intelligence artificielle.
+        Je construis des solutions fullstack robustes, du backend au cloud.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">Voir mon parcours</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:tsafackjefferson2001@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/jefferson-azafack-tsafack" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/jeffersonazafack" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.youtube.com/@jeffersonazafack" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. Qui suis-je ?</span>
+        <h2 class="section-title">À propos de moi</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Étudiant en <strong>génie logiciel</strong> au Cégep Maisonneuve (AEC), je suis un développeur fullstack
+            avec une solide expérience en environnements professionnels réels — de startups africaines à des entreprises
+            canadiennes de renom comme <strong>Walmart Canada</strong> et <strong>Yulcom Technologies</strong>.
+          </p>
+          <p>
+            Ma curiosité m'a naturellement conduit vers l'<strong>intelligence artificielle</strong> : j'intègre des LLM,
+            des bibliothèques de traitement de documents et d'images dans des applications métier concrètes.
+            J'automatise des workflows avec <strong>n8n</strong> et <strong>Zapier</strong> pour connecter IA et applications.
+          </p>
+          <p>
+            Je suis <strong>Résident Permanent</strong> au Canada, bilingue français/anglais, toujours prêt à apprendre
+            et à relever de nouveaux défis techniques.
+          </p>
+          <div class="about-badges">
+            <span class="badge"><i class="fas fa-map-marker-alt"></i> Longueuil, Québec</span>
+            <span class="badge"><i class="fas fa-id-card"></i> Résident Permanent</span>
+            <span class="badge"><i class="fas fa-language"></i> FR / EN</span>
+            <span class="badge"><i class="fas fa-graduation-cap"></i> AEC Génie Logiciel</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Années d'expérience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Technologies maîtrisées</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Entreprises</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Pays</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Mon parcours</span>
+        <h2 class="section-title">Expérience professionnelle</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Yulcom -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot current"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Développeur Web / IA — Stagiaire</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Yulcom Technologies — Montréal</p>
+              </div>
+              <span class="timeline-date current-badge">Jan 2026 — Présent</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Développement fullstack avec <strong>Django</strong> (backend) et <strong>Angular</strong> (frontend) dans un environnement agile.</li>
+              <li>Intégration de l'IA : bibliothèques de traitement de documents (OCR, parsing PDF), traitement d'images et intégration de <strong>LLM</strong> (Large Language Models) dans des applications métier.</li>
+              <li>Conception et développement d'<strong>API REST</strong> sécurisées, tests unitaires et documentation technique.</li>
+              <li>Revue de code, débogage, gestion des branches et collaboration via <strong>Git / GitHub</strong>.</li>
+              <li>Conteneurisation des services avec <strong>Docker</strong> et participation aux pipelines <strong>CI/CD</strong>.</li>
+              <li>Participation aux cérémonies agiles : stand-ups quotidiens, sprint planning, rétrospectives.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Django</span><span>Angular</span><span>LLM</span><span>OCR</span>
+              <span>Docker</span><span>CI/CD</span><span>Python</span><span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Walmart -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Associé aux projets logiciels</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Walmart Canada — Longueuil</p>
+              </div>
+              <span class="timeline-date">Sept 2024 — Déc 2025</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Développement fullstack avec <strong>Java / Spring Boot</strong> (backend) et <strong>Angular / React</strong> (frontend).</li>
+              <li>Analyse des besoins métier avec <strong>UML</strong> et conception orientée objet.</li>
+              <li>Tests unitaires, revue de code et intégration continue dans une équipe pluridisciplinaire.</li>
+              <li>Déploiement cloud sur <strong>AWS</strong> avec Docker et pipelines CI/CD via GitHub Actions.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Java</span><span>Spring Boot</span><span>Angular</span><span>React</span>
+              <span>AWS</span><span>Docker</span><span>CI/CD</span><span>UML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visibility Cam -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Développeur logiciel — Stagiaire</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Visibility Cam SARL</p>
+              </div>
+              <span class="timeline-date">Août 2023 — Août 2024</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Développement d'applications web avec <strong>TypeScript, Node.js et React.js</strong>.</li>
+              <li>Conception et sécurisation d'<strong>API REST</strong> avec authentification <strong>JWT</strong>.</li>
+              <li>Rédaction de spécifications fonctionnelles et techniques.</li>
+              <li>Collaboration en équipe et participation à la planification agile.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>TypeScript</span><span>Node.js</span><span>React</span>
+              <span>API REST</span><span>JWT</span><span>Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Uni2Grow -->
+        <div class="timeline-item" data-aos>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Développeur logiciel — Stagiaire</h3>
+                <p class="timeline-company"><i class="fas fa-building"></i> Uni2Grow SARL</p>
+              </div>
+              <span class="timeline-date">Avr 2023 — Juil 2023</span>
+            </div>
+            <ul class="timeline-tasks">
+              <li>Développement fullstack avec <strong>Java, TypeScript, Spring Boot et Angular</strong>.</li>
+              <li>Tests unitaires, débogage et déploiement cloud.</li>
+              <li>Participation active à la définition de l'architecture logicielle.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Java</span><span>TypeScript</span><span>Spring Boot</span>
+              <span>Angular</span><span>Cloud</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Ce que j'ai construit</span>
+        <h2 class="section-title">Projets réalisés</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured" data-aos>
+          <div class="project-top">
+            <i class="fas fa-folder-open project-icon"></i>
+            <div class="project-links">
+              <a href="https://github.com/jeffersonazafack" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Application de création automatique de contenu</h3>
+          <p class="project-desc">
+            Application fullstack permettant la génération automatique de contenu via des workflows IA.
+            Intégration d'un moteur d'automatisation <strong>n8n</strong> pour orchestrer les tâches,
+            avec authentification sécurisée et déploiement cloud.
+          </p>
+          <div class="project-tags">
+            <span>Java</span><span>Spring Boot</span><span>Angular</span>
+            <span>PostgreSQL</span><span>n8n</span><span>Docker</span><span>GCP</span><span>JWT</span>
+          </div>
+        </div>
+
+        <!-- Placeholder pour futurs projets -->
+        <div class="project-card add-project" data-aos>
+          <i class="fas fa-plus-circle"></i>
+          <p>D'autres projets à venir…</p>
+          <span>Mettez à jour <code>index.html</code> pour ajouter vos nouveaux projets ici.</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Mon arsenal</span>
+        <h2 class="section-title">Compétences techniques</h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Langages -->
+        <div class="skill-group" data-aos>
+          <h3><i class="fas fa-code"></i> Langages</h3>
+          <div class="tech-icons">
+            <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="tech-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+            <div class="tech-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+            <div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+            <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+            <div class="tech-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+            <div class="tech-item"><i class="fas fa-database tech-fa"></i><span>SQL</span></div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-group" data-aos>
+          <h3><i class="fas fa-layer-group"></i> Frameworks & Librairies</h3>
+          <div class="tech-icons">
+            <div class="tech-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+            <div class="tech-item"><i class="devicon-spring-plain colored"></i><span>Spring Boot</span></div>
+            <div class="tech-item"><i class="devicon-angularjs-plain colored"></i><span>Angular</span></div>
+            <div class="tech-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+            <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+          </div>
+        </div>
+
+        <!-- IA -->
+        <div class="skill-group" data-aos>
+          <h3><i class="fas fa-robot"></i> Intelligence Artificielle</h3>
+          <div class="tech-icons">
+            <div class="tech-item"><i class="fas fa-brain tech-fa"></i><span>LLM</span></div>
+            <div class="tech-item"><i class="fas fa-file-alt tech-fa"></i><span>OCR / Docs</span></div>
+            <div class="tech-item"><i class="fas fa-image tech-fa"></i><span>Vision IA</span></div>
+            <div class="tech-item"><i class="fas fa-project-diagram tech-fa"></i><span>n8n</span></div>
+            <div class="tech-item"><i class="fas fa-bolt tech-fa"></i><span>Zapier</span></div>
+          </div>
+        </div>
+
+        <!-- Bases de données -->
+        <div class="skill-group" data-aos>
+          <h3><i class="fas fa-database"></i> Bases de données</h3>
+          <div class="tech-icons">
+            <div class="tech-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+            <div class="tech-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+            <div class="tech-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-group" data-aos>
+          <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+          <div class="tech-icons">
+            <div class="tech-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+            <div class="tech-item"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+            <div class="tech-item"><i class="devicon-googlecloud-plain colored"></i><span>GCP</span></div>
+            <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+            <div class="tech-item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+            <div class="tech-item"><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></div>
+            <div class="tech-item"><i class="fas fa-infinity tech-fa"></i><span>CI/CD</span></div>
+          </div>
+        </div>
+
+        <!-- Méthodes -->
+        <div class="skill-group" data-aos>
+          <h3><i class="fas fa-users-cog"></i> Méthodes & Pratiques</h3>
+          <div class="tech-icons">
+            <div class="tech-item"><i class="fas fa-sync-alt tech-fa"></i><span>Agile/Scrum</span></div>
+            <div class="tech-item"><i class="fas fa-plug tech-fa"></i><span>API REST</span></div>
+            <div class="tech-item"><i class="fas fa-key tech-fa"></i><span>JWT</span></div>
+            <div class="tech-item"><i class="fas fa-vial tech-fa"></i><span>Tests unitaires</span></div>
+            <div class="tech-item"><i class="fas fa-code-branch tech-fa"></i><span>Revue de code</span></div>
+            <div class="tech-item"><i class="fas fa-sitemap tech-fa"></i><span>UML</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. Ma formation</span>
+        <h2 class="section-title">Parcours académique</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card current-edu" data-aos>
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-content">
+            <span class="edu-badge">En cours</span>
+            <h3>Attestation d'études Collégiales (AEC) — Génie logiciel</h3>
+            <p class="edu-school"><i class="fas fa-university"></i> Cégep Maisonneuve — Montréal, Canada</p>
+            <p class="edu-date">2024 — présent</p>
+          </div>
+        </div>
+
+        <div class="edu-card" data-aos>
+          <div class="edu-icon"><i class="fas fa-scroll"></i></div>
+          <div class="edu-content">
+            <h3>Baccalauréat en informatique</h3>
+            <p class="edu-school"><i class="fas fa-university"></i> Université de Dschang — Cameroun</p>
+            <p class="edu-date">2023 — 2024 <em>(Équivalences du ministère)</em></p>
+          </div>
+        </div>
+
+        <div class="edu-card" data-aos>
+          <div class="edu-icon"><i class="fas fa-diploma"></i></div>
+          <div class="edu-content">
+            <h3>Diplôme en technique informatique</h3>
+            <p class="edu-school"><i class="fas fa-university"></i> Université de Dschang — Cameroun</p>
+            <p class="edu-date">2021 — 2023 <em>(Équivalences du ministère)</em></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06. Travaillons ensemble</span>
+        <h2 class="section-title">Me contacter</h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Je suis toujours ouvert à de nouvelles opportunités, collaborations ou simplement à une bonne conversation
+            sur la tech. N'hésitez pas à me contacter !
+          </p>
+          <div class="contact-links">
+            <a href="mailto:tsafackjefferson2001@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <strong>tsafackjefferson2001@gmail.com</strong>
+              </div>
+            </a>
+            <a href="tel:+14502727808" class="contact-link">
+              <i class="fas fa-phone"></i>
+              <div>
+                <span>Téléphone</span>
+                <strong>+1 450 272 7808</strong>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/jefferson-azafack-tsafack" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <span>LinkedIn</span>
+                <strong>jefferson-azafack-tsafack</strong>
+              </div>
+            </a>
+            <a href="https://github.com/jeffersonazafack" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <div>
+                <span>GitHub</span>
+                <strong>jeffersonazafack</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="mailto:tsafackjefferson2001@gmail.com" class="btn btn-primary btn-large">
+          <i class="fas fa-paper-plane"></i> Envoyer un message
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <p>Conçu & développé par <strong>Jefferson Azafack Tsafack</strong></p>
+      <p class="footer-sub">Ouvert aux opportunités de stage &amp; collaboration</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
