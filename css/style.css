@@ -421,6 +421,14 @@ strong { color: var(--text); font-weight: 600; }
 }
 .badge i { color: var(--accent); font-size: 0.75rem; }
 
+.badge-open {
+  background: rgba(99, 102, 241, 0.12);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+.badge-open i { color: var(--accent); }
+
 .about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
